@@ -1,5 +1,5 @@
-admission-imgbody {
-    font-family: 'Montserrat';
+body {
+    color: #051f4d;
 }
 
 .container {
@@ -92,4 +92,10 @@ admission-imgbody {
 #school .custom-bg {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 6% 100%, 0% 60%, 8% 21%);
     background: #35a736;
+}
+
+.step-bg {
+    background: url("https://cdn.shortpixel.ai/spai/q_lossy+w_760+to_auto+ret_img/https://energeticcity.ca/wp-content/uploads/2023/01/pYWuOMhtc6k-1200x630-2-1024x538.jpg");
+    background-size: cover;
+
 }
