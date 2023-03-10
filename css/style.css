@@ -1,13 +1,23 @@
 body {
-    color: #051f4d;
+    color: #303030;
 }
-
+.layout::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: #30303088;
+    inset: 0;
+}
 .container {
     max-width: 1200px !important;
 }
 
 #banner {
-    background-image: url('https://xqsuperschool.org/rethinktogether/wp-content/uploads/sites/5/2021/05/pexels-pixabay-267885.jpg');
+    background-image: url('../image/campus-banner.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #dream .content-left::before,
@@ -97,5 +107,29 @@ body {
 .step-bg {
     background: url("https://cdn.shortpixel.ai/spai/q_lossy+w_760+to_auto+ret_img/https://energeticcity.ca/wp-content/uploads/2023/01/pYWuOMhtc6k-1200x630-2-1024x538.jpg");
     background-size: cover;
+}
 
+@media screen and (max-width: 1536px) {
+    #dream .left-side::after,
+    #dream .right-side::after,
+    #dream .left-side::before, 
+    #dream .right-side::before,
+    #dream .content-left::before,
+    #dream .content-right::before
+     {
+        content: unset;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #navbar-checkbox ~ .menu-nav {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s linear;
+    }
+    
+    #navbar-checkbox:checked ~ .menu-nav {
+        opacity: 1;
+        visibility: visible;
+    }
 }

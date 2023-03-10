@@ -24,40 +24,43 @@
 
 <body>
     <header>
-        <nav class="bg-primary">
-            <div class="flex items-center justify-between container mx-auto">
+        <nav class="bg-white">
+            <div class="flex items-center relative justify-between container mx-auto">
                 <div class="uppercase flex items-center">
-                    <img src="https://w.ladicdn.com/s400x400/5ccffec5c2076e52d083379f/logo-neu-20200626025547.png"
-                        class="w-[60px] aspect-square alt="">
-                    <p class=" font-bold ml-2 text-sm text-white">Trường Đại học Kinh doanh và Công nghệ Hà Nội</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnsNlvzBwhJKo9CLCXCmnlWscrs4sUxhTaMg&usqp=CAU"
+                        class="w-[60px] aspect-square" alt="">
+                    <p class=" font-bold ml-2 text-sm">Metaedu</p>
                 </div>
-
-                <div class="flex items-center text-white font-semibold text-xs justify-between uppercase">
-                    <a class="px-6" href="">phản hồi</a>
-                    <a class="px-6" href="">bằng cấp</a>
-                    <a class="px-6" href="">học trực tuyến</a>
-                    <a class="px-6" href="">ngành học</a>
-                    <button class="uppercase ml-6 py-3 px-6 rounded-3xl bg-white text-red">tư vấn miễn phí</button>
+                <label for="navbar-checkbox" class="mr-3">
+                    <i class="fa-solid fa-bars text-primary text-3xl block lg:hidden"></i>
+                </label>
+                <input id="navbar-checkbox" class="hidden" type="checkbox">
+                <div class="menu-nav flex flex-col bg-white absolute right-0 top-[100%] lg:relative lg:flex-row lg:items-center font-semibold text-sm justify-between uppercase w-full lg:w-auto shadow-md lg:shadow-none">
+                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="">phản hồi</a>
+                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="">bằng cấp</a>
+                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="">học trực tuyến</a>
+                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="">ngành học</a>
+                    <button class="uppercase lg:ml-6 py-3 px-6 lg:rounded-3xl bg-primary text-primary border border-primary text-white">tư vấn miễn phí</button>
+                    <label for="navbar-checkbox" class="lg:hidden block layout relative"></label>
                 </div>
             </div>
         </nav>
     </header>
     <section id="banner">
-        <div class="grid grid-cols-3 mx-auto py-[80px] container">
+        <div class="grid lg:grid-cols-3 grid-cols-1 px-6 sm:px-[70px] lg:px-0 mx-auto py-[80px] container">
             <div class="col-span-2">
                 <div class="uppercase flex items-center">
                     <img src="https://w.ladicdn.com/s400x400/5ccffec5c2076e52d083379f/logo-neu-20200626025547.png"
                         class="w-[80px] aspect-square alt="">
                     <div>
-                        <p class=" font-bold ml-2 text-4xl text-white">Trường Đại học Kinh doanh và Công nghệ Hà Nội</p>
+                        <p class=" font-bold ml-2 text-4xl text-white">METAEDU</p>
                     <p class="font-medium text-white ml-2 mt-2">trung tâm đào tạo từ xa</p>
                 </div>
             </div>
-            <h2 class="font-bold uppercase text-4xl mt-[50px] leading-[60px] text-white">
-                <strong class="bg-[#68b963b5] font-bold py-3">ngôi nhà nhận bằng đại học</strong>
-                </br>
-                <span class="">thay đổi cuộc sống</span>
+            <h2 class="font-bold uppercase text-xl md:text-4xl mt-[50px] text-white">
+                <strong class="bg-[#68b963b5] font-bold">ngôi nhà nhận bằng đại học</strong>
             </h2>
+            <h2 class="font-bold uppercase text-xl md:text-4xl mt-2 text-white">thay đổi cuộc sống</h2>
             <div class="flex items-center mt-6">
                 <i class="fa-regular fa-star text-white text-lg mr-2"></i>
                 <p class="font-semibold text-lg text-white">Không thi đầu vào</p>
@@ -81,7 +84,7 @@
         </div>
         <div>
             <div class="text-center bg-primary rounded-xl">
-                <form action="" class="p-5">
+                <form action="" class="p-5 mt-4 lg:mt-0">
                     <p class="text-white text-lg font-bold uppercase">Đăng ký ngay tại đây</p>
                     <label>
                         <input type="text" class="mt-8 border-0 rounded-xl w-11/12" placeholder="Họ và tên*">
@@ -127,55 +130,57 @@
     </section>
     <section id="dream" class="pt-[40px]">
         <div class="text-center">
-            <h3 class="uppercase text-3xl font-bold">thiếu tấm <strong class="text-primary font-bold">bằng đại học</strong><br>đang
+            <h3 class="uppercase text-xl md:text-3xl font-bold">thiếu tấm <strong class="text-primary font-bold">bằng đại học</strong><br>đang
                 <strong class="text-primary font-bold">kìm hãm ước mơ</strong> của bạn</h3>
         </div>
-        <div class="container mx-auto relative">
-            <div class="mt-8">
+        <div class="container mx-auto relative 2xl:h-auto px-4 xl:px-0">
+            <div class="mt-8 hidden 2xl:block">
                 <img class="mx-auto" src="https://eneu.edu.vn/images/asian%20woman%20with%20wings_v2%20(minimized).png"
                     alt="">
             </div>
-            <div class="left-side absolute text-center left-[20px] top-12 w-[175px]">
-                <p class="content-left text-red font-semibold">Khó khăn khi tìm việc</p>
-            </div>
-            <div class="left-side absolute text-center left-[-10px] top-[150px] w-[175px]">
-                <p class="content-left text-red font-semibold">Trở ngại trong thăng tiến sự nghiệp</p>
-            </div>
-            <div class="left-side absolute text-center left-[-20px] top-[250px] w-[175px]">
-                <p class="content-left text-red font-semibold">Khó được nâng lương</p>
-            </div>
-            <div class="left-side absolute text-center left-[-30px] top-[350px] w-[175px]">
-                <p class="content-left text-red font-semibold">Cảm thấy tự ti về học vấn</p>
-            </div>
-            <div class="right-side absolute text-center right-[0px] top-12 w-[200px]">
-                <p class="content-right text-red font-semibold">Quá bận rộn, không thể lên giảng đường</p>
-            </div>
-            <div class="right-side absolute text-center right-[-30px] top-[150px] w-[200px]">
-                <p class="content-right text-red font-semibold">Ngại học và thi lại. Cảm thấy đã quá già để làm sinh
-                    viên</p>
-            </div>
-            <div class="right-side absolute text-center right-[-50px] top-[250px] w-[200px]">
-                <p class="content-right text-red font-semibold">Chi phí học tập, sinh hoạt lớn</p>
-            </div>
-            <div class="right-side absolute text-center right-[-50px] top-[350px] w-[200px]">
-                <p class="content-right text-red font-semibold">Muốn lấy thêm bằng nhưng không đủ sức học 2 trường cùng
-                    lúc</p>
+            <div class="grid grid-cols-2 gap-x-4 2xl:block mb-8 2xl:m-8">
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center left-[20px] left-[20%] top-[50px] 2xl:w-[175px]">
+                    <p class="content-left text-red font-semibold">Khó khăn khi tìm việc</p>
+                </div>
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center 2xl:left-[-10px] left-[20%] top-[150px] 2xl:w-[175px]">
+                    <p class="content-left text-red font-semibold">Trở ngại trong thăng tiến sự nghiệp</p>
+                </div>
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center 2xl:left-[-20px] left-[20%] top-[250px] 2xl:w-[175px]">
+                    <p class="content-left text-red font-semibold">Khó được nâng lương</p>
+                </div>
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center 2xl:left-[-30px] left-[20%] top-[350px] 2xl:w-[175px]">
+                    <p class="content-left text-red font-semibold">Cảm thấy tự ti về học vấn</p>
+                </div>
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 right-side 2xl:absolute text-center 2xl:right-[0px] right-[20%] top-[50px] 2xl:w-[200px]">
+                    <p class="content-right text-red font-semibold">Quá bận rộn, không thể lên giảng đường</p>
+                </div>
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 right-side 2xl:absolute text-center 2xl:right-[-30px] right-[20%] top-[200px] 2xl:w-[200px]">
+                    <p class="content-right text-red font-semibold">Ngại học và thi lại. Cảm thấy đã quá già để làm sinh
+                        viên</p>
+                </div>
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 right-side 2xl:absolute text-center 2xl:right-[-50px] right-[20%] top-[300px] 2xl:w-[200px]">
+                    <p class="content-right text-red font-semibold">Chi phí học tập, sinh hoạt lớn</p>
+                </div>
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 right-side 2xl:absolute text-center 2xl:right-[-50px] right-[20%] top-[400px] 2xl:w-[200px]">
+                    <p class="content-right text-red font-semibold">Muốn lấy thêm bằng nhưng không đủ sức học 2 trường cùng
+                        lúc</p>
+                </div>
             </div>
         </div>
     </section>
     <section id="listen" class="bg-[#ebf2ff] py-[40px]">
         <div class="text-center">
-            <h3 class="uppercase text-2xl font-bold">Hơn <strong class="text-primary font-bold">20.000 học viên</strong> của chúng
+            <h3 class="uppercase text-lg md:text-2xl font-bold px-4 xl:px-0">Hơn <strong class="text-primary font-bold">20.000 học viên</strong> của chúng
                 tôi<br>cũng từng giống như bạn</h3>
-            <h3 class="uppercase text-2xl font-bold mt-[20px]">nhưng, họ đã có được <strong class="text-primary font-bold">tấm bằng cử
+            <h3 class="uppercase text-lg md:text-2xl font-bold mt-[20px] px-4 xl:px-0">nhưng, họ đã có được <strong class="text-primary font-bold">tấm bằng cử
                     nhân</strong> nhờ vào <br>
-                <strong class="text-primary font-bold">học trực tuyến e-learning</strong> của trường<br> Đại học Kinh doanh và Công
+                <strong class="text-primary font-bold">học trực tuyến e-learning</strong> của trường<br class="hidden md:block"> Đại học Kinh doanh và Công
                 nghệ Hà nội
             </h3>
         </div>
         <div class="container mx-auto mt-[40px]">
             <p class="text-center uppercase text-sm">hãy lắng nghe phản hồi của họ...</p>
-            <div class="grid grid-cols-3 gap-12 mt-8">
+            <div class="grid md:grid-cols-3 grid-cols-1 px-4 xl:px-0 gap-12 mt-8">
                 <div class="card flex flex-col justify-between h-full bg-white rounded-xl line-clamp-7">
                     <div class="p-4">
                         <i class="fa-solid fa-quote-left text-primary"></i>
@@ -183,13 +188,13 @@
                             bởi vì tôi không cần phải đến tận trường để học. Tôi có thể theo dõi video bài giảng để tự
                             học mọi lúc mọi nơi mà tôi muốn…</p>
                     </div>
-                    <div class="grid grid-cols-3">
+                    <div class="grid grid-cols-3 mt-6">
                         <div class="avatar col-span-1">
                             <img src="https://eneu.edu.vn/images/mai-van-hai.png" class="w-[80px] aspect-square mx-auto"
                                 alt="">
                         </div>
                         <div class="info col-span-2 text-center">
-                            <p class="mt-4 text-white font-semibold uppercase">anh Mai Văn hải</p>
+                            <p class="mt-4 text-white font-semibold uppercase text-sm">anh Mai Văn hải</p>
                             <p class="mt-2 text-white font-medium text-sm">Cử nhân ngành luật</p>
                         </div>
                     </div>
@@ -201,13 +206,13 @@
                             bởi vì tôi không cần phải đến tận trường để học. Tôi có thể theo dõi video bài giảng để tự
                             học mọi lúc mọi nơi mà tôi muốn…</p>
                     </div>
-                    <div class="grid grid-cols-3">
+                    <div class="grid grid-cols-3 mt-6">
                         <div class="avatar col-span-1">
                             <img src="https://eneu.edu.vn/images/mai-van-hai.png" class="w-[80px] aspect-square mx-auto"
                                 alt="">
                         </div>
                         <div class="info col-span-2 text-center">
-                            <p class="pl-6 mt-4 text-white font-semibold uppercase">anh Mai Văn hải</p>
+                            <p class="pl-6 mt-4 text-white font-semibold uppercase text-sm">anh Mai Văn hải</p>
                             <p class="pl-6 mt-2 text-white font-medium text-sm">Cử nhân ngành luật</p>
                         </div>
                     </div>
@@ -217,13 +222,13 @@
                         <i class="fa-solid fa-quote-left text-primary"></i>
                         <p>Hệ đào tạo đại học từ xa của trường giúp tôi tiết kiệm được rất nhiều thời gian</p>
                     </div>
-                    <div class="grid grid-cols-3">
+                    <div class="grid grid-cols-3 mt-6">
                         <div class="avatar col-span-1">
                             <img src="https://eneu.edu.vn/images/mai-van-hai.png" class="w-[80px] aspect-square mx-auto"
                                 alt="">
                         </div>
                         <div class="info col-span-2 text-center">
-                            <p class="pl-6 mt-4 text-white font-semibold uppercase">anh Mai Văn hải</p>
+                            <p class="pl-6 mt-4 text-white font-semibold uppercase text-sm">anh Mai Văn hải</p>
                             <p class="pl-6 mt-2 text-white font-medium text-sm">Cử nhân ngành luật</p>
                         </div>
                     </div>
@@ -233,9 +238,9 @@
     </section>
 
     <section id="bachelor" class="py-[40px] bg-lightRed">
-        <div class="grid grid-cols-2 gap-7 container mx-auto">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-7 px-4 xl:px-0 container mx-auto">
             <div class="bachelor-info">
-                <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-3xl font-bold">
+                <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-xl md:text-3xl font-bold">
                     bằng cấp tương tự với
                     <br>
                     <strong class="text-primary font-bold">bằng đào tạo chính quy</strong>
@@ -271,7 +276,7 @@
                 </div>
             </div>
             <div>
-                <div class="video-bg flex flex-col h-full justify-center">
+                <div class="video-bg flex flex-col h-full justify-center mt-4 md:mt-0">
                     <div class="video relative">
                         <video width="70%" class="mx-auto relative z-10" controls>
                             <source
@@ -288,13 +293,13 @@
         </div>
     </section>
     <section id="admission" class="py-[40px]">
-        <div class="grid grid-cols-2 gap-7 container mx-auto">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-7 container mx-auto">
             <div class="admission-img h-full overflow-hidden relative">
-                <img class="z-2 h-full object-cover relative"
+                <img class="z-2 h-full object-cover relative hidden md:block"
                     src="https://eneu.edu.vn/images/khong%20thi%20tuyen%20(1%20of%201)%20(minimized).png" alt="">
             </div>
-            <div class="admission-content">
-                <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-3xl font-bold">
+            <div class="admission-content px-4 xl:px-0">
+                <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-xl md:text-3xl font-bold">
                     <strong class="text-primary font-bold">không thi</strong>
                     tuyển sinh
                 </h3>
@@ -315,7 +320,7 @@
                         Tốt nghiệp Trung cấp
                     </li>
                 </ul>
-                <div class="grid grid-cols-3 gap-6 mt-6 p-2">
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-6 mt-6 p-2">
                     <div class="text-center p-2 relative border border-primary rounded-xl">
                         <div
                             class="rounded-full top-[-18px] right-[50%] translate-x-1/2 absolute bg-white w-[36px] h-[36px] border border-primary">
@@ -353,17 +358,17 @@
         </div>
     </section>
     <section id="school" class="bg-[#ebf2ff] py-[40px]">
-        <div class="grid grid-cols-4 grid-rows-4 gap-4 container mx-auto">
-            <div class="h-full overflow-hidden relative row-start-1 row-end-5 col-start-1 col-end-3">
-                <div class="h-full relative flex flex-col justify-end">
-                    <img class=""
+        <div class="grid md:grid-cols-4 grid-cols-2 grid-rows-4 gap-4 container mx-auto px-4 xl:px-0">
+            <div class="h-full overflow-hidden relative md:row-start-1 md:row-end-5 md:col-start-1 md:col-end-3 col-span-2">
+                <div class="h-full relative flex flex-col justify-end w-full h-[160px] md:h-full">
+                    <img class="h-[160px] md:h-1/2 object-cover"
                         src="https://www.vmcdn.ca/f/files/halifaxtoday/images/education/073020-classroom-school-student-teacher-adobestock_301243376.jpeg;w=960"
                         alt="">
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl row-start-1 col-start-1">
+            <div class="relative bg-white rounded-xl md:row-start-1 md:col-start-1">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
-                    <p class="text-4xl text-white text-center">01</p>
+                    <p class="tex-3xl md:text-4xl text-white text-center">01</p>
                 </div>
                 <div class="p-3">
                     <p class="font-bold text-primary">Học online</p>
@@ -371,9 +376,9 @@
                         tử, tham gia lớp học Vclass.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl row-start-2 col-start-2">
+            <div class="relative bg-white rounded-xl md:row-start-2 md:col-start-2">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
-                    <p class="text-4xl text-white text-center">02</p>
+                    <p class="tex-3xl md:text-4xl text-white text-center">02</p>
                 </div>
                 <div class="p-3">
                     <p class="font-bold text-primary">Hệ thống bài tập</p>
@@ -381,18 +386,18 @@
                         tập.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl row-start-3 col-start-3">
+            <div class="relative bg-white rounded-xl md:row-start-3 md:col-start-3">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
-                    <p class="text-4xl text-white text-center">03</p>
+                    <p class="tex-3xl md:text-4xl text-white text-center">03</p>
                 </div>
                 <div class="p-3">
                     <p class="font-bold text-primary">Giữ kết nối</p>
                     <p class="text-sm">Tương tác với Giảng viên và các học viên khác hằng ngày qua forum.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl row-start-4 col-start-4">
+            <div class="relative bg-white rounded-xl md:row-start-4 md:col-start-4">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
-                    <p class="text-4xl text-white text-center">04</p>
+                    <p class="tex-3xl md:text-4xl text-white text-center">04</p>
                 </div>
                 <div class="p-3">
                     <p class="font-bold text-primary">Ít phải tới trường</p>
@@ -400,8 +405,8 @@
                         phần tập trung tại trường.</p>
                 </div>
             </div>
-            <div class="row-start-1 row-end-3 col-start-3 col-end-5">
-                <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-3xl font-bold">
+            <div class="row-start-1 md:row-end-3 md:col-start-3 md:col-end-5 col-span-2">
+                <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-xl md:text-3xl font-bold">
                     <strong class="text-primary font-bold">không cần</strong>
                     đến trường
                 </h3>
@@ -412,12 +417,12 @@
         </div>
     </section>
     <section id="newBachelor" class="py-[40px]">
-        <div class="container mx-auto grid grid-cols-5">
-            <div class="col-span-1 -rotate-90 text-primary font-bold flex justify-center items-center">
+        <div class="container mx-auto grid md:grid-cols-5 grid-cols-2 xl:px-0 px-4">
+            <div class="col-span-1 hidden -rotate-90 text-primary font-bold md:flex justify-center items-center">
                 <p class="text-7xl">BACHELOR</p>
             </div>
             <div class="col-span-2 mr-6">
-                <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-3xl font-bold">
+                <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-xl md:text-3xl font-bold">
                     <strong class="text-primary font-bold">mẫu văn bằng mới</strong>
                     trên văn bằng đã không còn ghi hình thức đào tạo
                 </h3>
@@ -430,7 +435,7 @@
                     hình thức đào tạo như chính quy hoặc vừa làm vừa học; học từ xa hay tự học có hướng dẫn trong nội
                     dung chính của văn bằng như quy định cũ tại phụ lục kèm theo Thông tư số 19/2011/TT-BGDĐT.</p>
             </div>
-            <div class="col-span-2">
+            <div class="col-span-2 md:mt-0 mt-4">
                 <div class="flex items-center justify-center h-full object-cover">
                     <img src="https://w.ladicdn.com/s950x800/5ccffec5c2076e52d083379f/mau-phoi-bang-neu-elearning-768x561-20200810103505.jpg"
                         alt="">
@@ -440,8 +445,8 @@
     </section>
 
     <section id="changeLife" class="py-[40px] bg-[#ebf2ff]">
-        <div class="text-center">
-            <h3 class="uppercase text-3xl font-bold">
+        <div class="text-center xl:px-0 px-4">
+            <h3 class="uppercase text-lg md:text-3xl font-bold">
                 ĐẠI HỌC KINH TẾ QUỐC DÂN LUÔN NỖ LỰC KHÔNG NGỪNG
                 <br>
                 TÌM CHO BẠN
@@ -450,24 +455,24 @@
                 ĐỂ <strong class="text-primary font-bold">THAY ĐỔI CUỘC SỐNG</strong>
             </h3>
         </div>
-        <div class="container mx-auto grid grid-cols-4 gap-8 mt-12 lg:px-[50px]">
+        <div class="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-8 mt-12 lg:px-[50px] xl:px-0 px-4">
             <div
-                class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto text-center">
+                class="h-[150px] w-[150px] flex flex-col justify-center rounded-full border border-primary mx-auto text-center">
                 <p class="text-primary font-bold text-3xl">20.000+</p>
                 <p class="text-sm">Học viên theo học</p>
             </div>
             <div
-                class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto text-center">
+                class="h-[150px] w-[150px] flex flex-col justify-center rounded-full border border-primary mx-auto text-center">
                 <p class="text-primary font-bold text-3xl">169+</p>
                 <p class="text-sm">Khóa đã khai giảng</p>
             </div>
             <div
-                class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto text-center">
+                class="h-[150px] w-[150px] flex flex-col justify-center rounded-full border border-primary mx-auto text-center">
                 <p class="text-primary font-bold text-3xl">98%</p>
                 <p class="text-sm">Học viên hài lòng về chương trình</p>
             </div>
             <div
-                class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto text-center">
+                class="h-[150px] w-[150px] flex flex-col justify-center rounded-full border border-primary mx-auto text-center">
                 <p class="text-primary font-bold text-3xl">96%</p>
                 <p class="text-sm">Có được việc làm phù hợp sau tốt nghiệp</p>
             </div>
@@ -476,13 +481,13 @@
 
     <section id="optimistic" class="bg-lightRed py-[40px]">
         <div class="text-center">
-            <h3 class="uppercase text-3xl font-bold">
+            <h3 class="uppercase md:text-3xl text-xl font-bold px-4 xl:px-0">
                 <strong class="text-primary font-bold">học trực tuyến</strong>
                 có những lợi thế nào
             </h3>
         </div>
-        <div class="container mx-auto grid grid-cols-6 gap-6 mt-14">
-            <div class="col-span-2 text-center p-2 relative border border-primary rounded-xl">
+        <div class="container mx-auto grid md:grid-cols-6 grid-cols-1 gap-6 mt-14 px-4 xl:px-0">
+            <div class="md:col-span-2 text-center p-2 relative border border-primary rounded-xl">
                 <div
                     class="rounded-full top-[-18px] right-[50%] translate-x-1/2 absolute bg-white w-[36px] h-[36px] border border-primary">
                     <p class="leading-9 font-bold text-primary">1</p>
@@ -493,7 +498,7 @@
                         đường, khói bụi hay nắng gió mưa giông.</p>
                 </div>
             </div>
-            <div class="col-span-2 text-center p-2 relative border border-primary rounded-xl">
+            <div class="md:col-span-2 text-center p-2 relative border border-primary rounded-xl">
                 <div
                     class="rounded-full top-[-18px] right-[50%] translate-x-1/2 absolute bg-white w-[36px] h-[36px] border border-primary">
                     <p class="leading-9 font-bold text-primary">2</p>
@@ -504,7 +509,7 @@
                         lại,...Đủ các loại phí mà bạn dễ dàng "né" được.</p>
                 </div>
             </div>
-            <div class="col-span-2 text-center p-2 relative border border-primary rounded-xl">
+            <div class="md:col-span-2 text-center p-2 relative border border-primary rounded-xl">
                 <div
                     class="rounded-full top-[-18px] right-[50%] translate-x-1/2 absolute bg-white w-[36px] h-[36px] border border-primary">
                     <p class="leading-9 font-bold text-primary">3</p>
@@ -515,7 +520,7 @@
                         trường vào một thời điểm cố định.</p>
                 </div>
             </div>
-            <div class="col-span-2 col-start-2 text-center p-2 relative border border-primary rounded-xl">
+            <div class="md:col-span-2 md:col-start-2 text-center p-2 relative border border-primary rounded-xl">
                 <div
                     class="rounded-full top-[-18px] right-[50%] translate-x-1/2 absolute bg-white w-[36px] h-[36px] border border-primary">
                     <p class="leading-9 font-bold text-primary">4</p>
@@ -526,7 +531,7 @@
                         để học thêm một kĩ năng, đi chơi, mua cho mình vài món đồ,...</p>
                 </div>
             </div>
-            <div class="col-span-2 col-start-4 text-center p-2 relative border border-primary rounded-xl">
+            <div class="md:col-span-2 md:col-start-4 text-center p-2 relative border border-primary rounded-xl">
                 <div
                     class="rounded-full top-[-18px] right-[50%] translate-x-1/2 absolute bg-white w-[36px] h-[36px] border border-primary">
                     <p class="leading-9 font-bold text-primary">5</p>
@@ -542,59 +547,59 @@
 
     <section id="majors" class="py-[40px]">
         <div class="text-center">
-            <h3 class="uppercase text-3xl font-bold">
+            <h3 class="uppercase md:text-3xl text-xl font-bold">
                 <strong class="text-primary font-bold">các ngành </strong>tuyển sinh
             </h3>
             <p class="uppercase text-sm mt-4">TRUNG TÂM ĐÀO TẠO TỪ XA, TRƯỜNG ĐẠI HỌC KINH DOANH VÀ CÔNG NGHỆ HÀ NỘI
                 <br> TUYỂN SINH CÁC NGÀNH</p>
         </div>
-        <div class="container mx-auto grid grid-cols-5 gap-y-8 px-[100px] mt-[40px]">
+        <div class="container mx-auto grid md:grid-cols-5 grid-cols-2 gap-y-8 lg:px-[100px] mt-[40px]">
             <div class="text-center">
                 <div
-                    class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto">
+                    class="lg:h-[160px] lg:w-[160px] h-[120px] w-[120px] flex flex-col justify-center rounded-full border border-primary mx-auto">
                     <i class="fa-solid fa-briefcase text-primary text-5xl"></i>
                 </div>
-                <p class="font-medium mt-4 uppercase">Quản Trị Kinh Doanh</p>
+                <p class="font-medium mt-4 uppercase text-sm md:text-base">Quản Trị Kinh Doanh</p>
             </div>
-            <div class="text-center col-start-3">
+            <div class="text-center md:col-start-3">
                 <div
-                    class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto">
+                    class="lg:h-[160px] lg:w-[160px] h-[120px] w-[120px] flex flex-col justify-center rounded-full border border-primary mx-auto">
                     <i class="fa-solid fa-scale-balanced text-primary text-5xl"></i>
                 </div>
-                <p class="font-medium mt-4 uppercase">Luật Kinh Tế</p>
+                <p class="font-medium mt-4 uppercase text-sm md:text-base">Luật Kinh Tế</p>
             </div>
-            <div class="text-center col-start-5">
+            <div class="text-center md:col-start-5">
                 <div
-                    class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto">
+                    class="lg:h-[160px] lg:w-[160px] h-[120px] w-[120px] flex flex-col justify-center rounded-full border border-primary mx-auto">
                     <i class="fa-solid fa-dollar-sign text-primary text-5xl"></i>
                 </div>
-                <p class="font-medium mt-4 uppercase">Tài Chính - Ngân Hàng</p>
+                <p class="font-medium mt-4 uppercase text-sm md:text-base">Tài Chính - Ngân Hàng</p>
             </div>
-            <div class="text-center col-start-2">
+            <div class="text-center md:col-start-2">
                 <div
-                    class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto">
+                    class="lg:h-[160px] lg:w-[160px] h-[120px] w-[120px] flex flex-col justify-center rounded-full border border-primary mx-auto">
                     <i class="fa-solid fa-gavel text-primary text-5xl"></i>
                 </div>
-                <p class="font-medium mt-4 uppercase">Luật</p>
+                <p class="font-medium mt-4 uppercase text-sm md:text-base">Luật</p>
             </div>
-            <div class="text-center col-start-4">
+            <div class="text-center md:col-start-4 col-span-2 md:col-span-1">
                 <div
-                    class="h-[160px] w-[160px] flex flex-col justify-center rounded-full border border-primary mx-auto">
+                    class="lg:h-[160px] lg:w-[160px] h-[120px] w-[120px] flex flex-col justify-center rounded-full border border-primary mx-auto">
                     <i class="fa-solid fa-calculator text-primary text-5xl"></i>
                 </div>
-                <p class="font-medium mt-4 uppercase">Kế Toán</p>
+                <p class="font-medium mt-4 uppercase text-sm md:text-base">Kế Toán</p>
             </div>
         </div>
     </section>
     <section id="step" class="py-[40px] step-bg">
         <div class="text-center">
-            <h3 class="uppercase text-3xl font-bold text-white">
+            <h3 class="uppercase text-xl md:text-3xl font-bold text-white">
                 quy trình tuyển sinh đơn giản
                 <br>
                 <strong class="text-primary font-bold">3 bước lấy bằng</strong>
             </h3>
         </div>
-        <div class="mt-12 grid grid-cols-2 container mx-auto px-[50px]">
+        <div class="mt-12 grid md:grid-cols-2 grid-cols-1 container mx-auto md:px-[50px]">
             <div class="flex flex-col justify-between">
                 <div class="text-center w-2/3 mx-auto p-2 relative border border-primary rounded-xl bg-white">
                     <div
@@ -633,7 +638,7 @@
                 </div>
             </div>
             <div>
-                <div class="mx-auto text-center bg-primary rounded-xl w-2/3">
+                <div class="mx-auto mt-4 md:mt-0 text-center bg-primary rounded-xl w-2/3">
                     <form action="" class="p-5">
                         <p class="text-white text-lg font-bold uppercase">Đăng ký ngay tại đây</p>
                         <label>
@@ -678,11 +683,11 @@
             </div>
         </div>
     </section>
-    <footer class="text-center text-neutral-600 lg:text-left">
+    <footer class="bg-dark text-center text-neutral-600 lg:text-left">
         <div
             class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between container mx-auto">
             <div class="mr-12 hidden lg:block">
-                <span>Kết nối với chúng tôi qua mạng xã hội:</span>
+                <span class="text-grey">Kết nối với chúng tôi qua mạng xã hội:</span>
             </div>
             <div class="flex justify-center">
                 <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200">
@@ -708,10 +713,10 @@
         <div class="py-10 text-center md:text-left container mx-auto">
             <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div class="">
-                    <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                    <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start text-grey">
                         <i class="fa-solid fa-square"></i>
                     </h6>
-                    <p>
+                    <p class="text-grey">
                         Here you can use rows and columns to organize your footer
                         content. Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit.
@@ -719,49 +724,49 @@
                 </div>
             
                 <div class="">
-                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white">
                         Đường dẫn
                     </h6>
                     <p class="mb-4">
-                        <a href="#!" class="">Phản hồi</a>
+                        <a href="#!" class="text-grey">Phản hồi</a>
                     </p>
                     <p class="mb-4">
-                        <a href="#!" class="">Bằng cấp</a>
+                        <a href="#!" class="text-grey">Bằng cấp</a>
                     </p>
                     <p class="mb-4">
-                        <a href="#!" class="">Học trực tuyến</a>
+                        <a href="#!" class="text-grey">Học trực tuyến</a>
                     </p>
                     <p>
-                        <a href="#!" class="">Ngành học</a>
+                        <a href="#!" class="text-grey">Ngành học</a>
                     </p>
                 </div>
                 <div>
-                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white">
                         Liên hệ
                     </h6>
-                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                    <p class="mb-4 flex items-center justify-center md:justify-start text-grey">
                         <i class="fa-solid fa-house mr-2"></i>
                         Lô CX01, khu đô thị Văn Khê, phường La Khê, quận Hà Đông Hà Nội
                     </p>
-                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                    <p class="mb-4 flex items-center justify-center md:justify-start text-grey">
                         <i class="fa-solid fa-envelope mr-2"></i>
                         info@example.com
                     </p>
-                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                    <p class="mb-4 flex items-center justify-center md:justify-start text-grey">
                         <i class="fa-solid fa-phone mr-2"></i>
                         +0123456788
                     </p>
-                    <p class="flex items-center justify-center md:justify-start">
+                    <p class="flex items-center justify-center md:justify-start text-grey">
                         <i class="fa-solid fa-message mr-2"></i>
                         0123456789
                     </p>
                 </div>
             </div>
         </div>
-        <div class="p-6 text-center border-t">
+        <div class="p-6 text-center border-t text-grey">
             <span class="">© 2023 Copyright:</span>
             <a class="font-medium"
-                href="https://tailwind-elements.com/">Trường Đại học Kinh doanh và Công nghệ Hà Nội</a>
+                href="https://tailwind-elements.com/">METAEDU</a>
         </div>
     </footer>
 </body>
