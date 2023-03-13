@@ -23,6 +23,11 @@
 </head>
 
 <body>
+    <div class="overlay">
+        <div class="modal-success absolute bg-white p-5 max-w-sm max-h-40 h-full w-full rounded-md overflow-hidden flex items-start justify-center">
+            <h4 class="text-2xl font-bold text-green-700">Chúc mừng bạn đã đăng ký thành công !!!</h4>
+        </div>
+    </div>
     <header>
         <nav class="bg-white">
             <div class="flex items-center relative justify-between container mx-auto">
@@ -98,7 +103,7 @@
                     <select class="mt-4 border-0 rounded-xl w-11/12">
                         <option value=""></option>
                     </select>
-                    <button type="submit" class="mt-4 bg-[#f2420d] py-2 px-6 text-white font-semibold rounded-3xl">Đăng
+                    <button type="submit" class="mt-4 bg-[#f2420d] py-2 px-6 text-white font-semibold rounded-3xl registerBtn">Đăng
                         ký</button>
                     <div class="uppercase text-white font-semibold mt-3">
                         lịch khai giảng dự kiến
@@ -654,7 +659,7 @@
                             <option value=""></option>
                         </select>
                         <button type="submit"
-                            class="mt-4 bg-[#f2420d] py-2 px-6 text-white font-semibold rounded-3xl">Đăng ký</button>
+                            class="mt-4 bg-[#f2420d] py-2 px-6 text-white font-semibold rounded-3xl registerBtn">Đăng ký</button>
                         <div class="uppercase text-white font-semibold mt-3">
                             lịch khai giảng dự kiến
                             <br>
@@ -769,6 +774,23 @@
                 href="https://tailwind-elements.com/">METAEDU</a>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="">
+        $(document).ready(function () {
+            $('.registerBtn').on('click', function(e) {
+                e.preventDefault()
+                $('.overlay').stop().fadeIn().promise().done(() => {
+                    setTimeout(() => {
+                        $('.overlay').stop().fadeOut()
+                    }, 2000);
+                })
+            })
+
+            $('.overlay').on('click', function(e) {
+                $('.overlay').stop().fadeOut()
+            })
+        })
+    </script>
 </body>
 
 </html>
