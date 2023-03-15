@@ -23,18 +23,13 @@
 </head>
 
 <body>
-    <div class="overlay">
-        <div class="modal-success absolute bg-white p-5 max-w-sm max-h-40 h-full w-full rounded-md overflow-hidden flex items-start justify-center">
-            <h4 class="text-2xl font-bold text-green-700">Chúc mừng bạn đã đăng ký thành công !!!</h4>
-        </div>
-    </div>
     <header>
-        <nav class="bg-white">
+        <nav class="bg-white fixed w-full z-10 shadow-md">
             <div class="flex items-center relative justify-between container mx-auto">
                 <div class="flex items-center">
-                    <img src="/image/logo-mtwedu.png"
+                    <img src="image/logo-mtwedu.png"
                         class="w-[80px] aspect-[157/112]" alt="">
-                    <p class=" font-bold ml-2 text-sm md:text-lg">Meta <strong class="text-primary font-bold">Education</strong></p>
+                    <p class=" font-bold ml-2 text-sm md:text-lg">Metaway <strong class="text-primary font-bold">Edu</strong></p>
                 </div>
                 <label for="navbar-checkbox" class="mr-3">
                     <i class="fa-solid fa-bars text-primary text-3xl block lg:hidden"></i>
@@ -45,50 +40,49 @@
                     <a class="lg:px-6 lg:py-0 px-6 py-3" href="#bachelor">bằng cấp</a>
                     <a class="lg:px-6 lg:py-0 px-6 py-3" href="#school">học trực tuyến</a>
                     <a class="lg:px-6 lg:py-0 px-6 py-3" href="#majors">ngành học</a>
-                    <button class="uppercase lg:ml-6 py-3 px-6 lg:rounded-3xl bg-primary text-primary border border-primary text-white">tư vấn miễn phí</button>
+                    <a href="#banner" class="uppercase lg:ml-6 py-3 px-6 lg:rounded-3xl bg-primary text-primary border border-primary text-white hover:bg-[#52a103] transition-all">tư vấn miễn phí</a>
                     <label for="navbar-checkbox" class="lg:hidden block layout relative"></label>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="banner">
+    <section id="banner" class="pt-16">
         <div class="grid lg:grid-cols-3 grid-cols-1 px-6 sm:px-[70px] lg:px-0 mx-auto py-[80px] container">
             <div class="col-span-2">
                 <div class="uppercase flex items-center">
                     <img src="image/logo-mtwedu.png"
                         class="w-[80px] aspect-[157/112] bg-white rounded-xl alt="">
                     <div>
-                        <p class=" font-bold ml-2 text-4xl text-white">META EDUCATION</p>
-                    <p class="font-medium text-white ml-2 mt-2">trung tâm đào tạo từ xa</p>
+                        <p class=" font-bold ml-2 text-4xl text-white text-shadow">METAWAY EDU</p>
+                    <p class="font-medium text-white ml-2 mt-2 text-shadow">trung tâm đào tạo từ xa</p>
                 </div>
             </div>
-            <h2 class="font-bold uppercase text-xl md:text-4xl mt-[50px] text-white">
-                <strong class="bg-[#68b963b5] font-bold">ngôi nhà nhận bằng đại học</strong>
+            <h2 class=" font-bold uppercase text-xl md:text-4xl mt-[50px] text-white text-shadow">
+                <strong class=" font-bold bg-[#66CC0080]"> kiến tạo ước mơ</strong> thay đổi cuộc sống
             </h2>
-            <h2 class="font-bold uppercase text-xl md:text-4xl mt-2 text-white">thay đổi cuộc sống</h2>
-            <div class="flex items-center mt-6">
+            <div class="flex items-center mt-6 text-shadow">
                 <i class="fa-regular fa-star text-white text-lg mr-2"></i>
-                <p class="font-semibold text-lg text-white">Không thi đầu vào</p>
+                <p class="font-semibold text-lg text-white">Không yêu cầu bất kỳ điều kiện đầu vào nào</p>
             </div>
-            <div class="flex items-center mt-3">
-                <i class="fa-regular fa-star text-white text-lg mr-2"></i>
-                <p class="font-semibold text-lg text-white">Không cần đến trường</p>
-            </div>
-            <div class="flex items-center mt-3">
+            <div class="flex items-center mt-3 text-shadow">
                 <i class="fa-regular fa-star text-white text-lg mr-2"></i>
                 <p class="font-semibold text-lg text-white">Chỉ cần máy tính và internet</p>
             </div>
-            <div class="flex items-center mt-3">
+            <div class="flex items-center mt-3 text-shadow">
                 <i class="fa-regular fa-star text-white text-lg mr-2"></i>
-                <p class="font-semibold text-lg text-white">Tiết kiệm chi phí</p>
+                <p class="font-semibold text-lg text-white">Học mọi lúc mọi nơi</p>
             </div>
-            <div class="flex items-center mt-3">
+            <div class="flex items-center mt-3 text-shadow">
+                <i class="fa-regular fa-star text-white text-lg mr-2"></i>
+                <p class="font-semibold text-lg text-white">Chi phí tối ưu</p>
+            </div>
+            <div class="flex items-center mt-3 text-shadow">
                 <i class="fa-regular fa-star text-white text-lg mr-2"></i>
                 <p class="font-semibold text-lg text-white">Giá trị văn bằng tương đương bằng chính quy</p>
             </div>
         </div>
         <div>
-            <div class="text-center bg-primary rounded-xl">
+            <div class="text-center bg-form rounded-xl">
                 <form action="" class="p-5 mt-4 lg:mt-0">
                     <p class="text-white text-lg font-bold uppercase">Đăng ký ngay tại đây</p>
                     <label>
@@ -97,21 +91,23 @@
                     <label>
                         <input type="text" class="mt-4 border-0 rounded-xl w-11/12" placeholder="Số điện thoại">
                     </label>
+                    <label>
+                        <input type="email" class="mt-4 border-0 rounded-xl w-11/12" placeholder="Email">
+                    </label>
                     <select class="mt-4 border-0 rounded-xl w-11/12">
-                        <option value="" selected>Hệ tốt nghiệp</option>
+                        <option value="" selected>Hệ đào tạo</option>
                     </select>
                     <select class="mt-4 border-0 rounded-xl w-11/12">
                         <option value="" selected class="text-grey">Ngành đăng ký</option>
                     </select>
-                    <button type="submit" class="mt-4 bg-white py-2 px-6 text-black font-semibold rounded-3xl registerBtn">Đăng
-                        ký</button>
+                    <button type="submit" class="mt-4 bg-[#66CC00] py-2 px-6 text-white font-semibold rounded-3xl registerBtn hover:bg-[#52a103] transition-all">Đăng ký</button>
                     <div class="uppercase text-white font-semibold mt-3">
                         lịch khai giảng dự kiến
                         <br>
                         <strong>21 - 12 - 2023</strong>
                     </div>
                 </form>
-                <div class="grid grid-cols-4 rounded-b-xl px-10 bg-[#319508]">
+                <div class="grid grid-cols-4 rounded-b-xl px-10 bg-[#35481f]">
                     <div class="px-4 py-2">
                         <p class="text-white text-2xl font-semibold">26</p>
                         <p class="text-white">ngày</p>
@@ -135,45 +131,41 @@
     </section>
     <section id="dream" class="pt-[40px]">
         <div class="text-center">
-            <h3 class="uppercase text-xl md:text-3xl font-bold">thiếu tấm <strong class="text-primary font-bold">bằng đại học</strong><br>đang
-                <strong class="text-primary font-bold">kìm hãm ước mơ</strong> của bạn</h3>
+            <h3 class="uppercase text-xl md:text-3xl font-bold">
+                học tập là một quyển vở
+                <br>
+                <strong class="text-primary font-bold">không có trang cuối cùng</strong>
+            </h3>
         </div>
         <div class="container mx-auto relative 2xl:h-auto px-4 xl:px-0">
             <div class="mt-8 hidden 2xl:block">
-                <img class="mx-auto" src="https://eneu.edu.vn/images/asian%20woman%20with%20wings_v2%20(minimized).png"
+                <img class="mx-auto" src="image/thinking.png"
                     alt="">
             </div>
             <div class="grid grid-cols-2 gap-x-4 2xl:block mb-8 2xl:m-8">
-                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center left-[20px] left-[20%] top-[50px] 2xl:w-[175px]">
-                    <p class="content-left text-red font-semibold">Khó khăn khi tìm việc</p>
+                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center 2xl:left-[20px] left-[20%] top-[50px] 2xl:w-[175px]">
+                    <p class="content-left text-red font-semibold">Môi trường học tập thân thiện</p>
                 </div>
                 <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center 2xl:left-[-10px] left-[20%] top-[150px] 2xl:w-[175px]">
-                    <p class="content-left text-red font-semibold">Trở ngại trong thăng tiến sự nghiệp</p>
+                    <p class="content-left text-red font-semibold">Kinh nghiệm giảng dạy lâu năm</p>
                 </div>
                 <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center 2xl:left-[-20px] left-[20%] top-[250px] 2xl:w-[175px]">
-                    <p class="content-left text-red font-semibold">Khó được nâng lương</p>
+                    <p class="content-left text-red font-semibold">Công nghệ hiện đại thân thiện</p>
                 </div>
-                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 left-side 2xl:absolute text-center 2xl:left-[-30px] left-[20%] top-[350px] 2xl:w-[175px]">
-                    <p class="content-left text-red font-semibold">Cảm thấy tự ti về học vấn</p>
-                </div>
+
                 <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 right-side 2xl:absolute text-center 2xl:right-[0px] right-[20%] top-[50px] 2xl:w-[200px]">
-                    <p class="content-right text-red font-semibold">Quá bận rộn, không thể lên giảng đường</p>
+                    <p class="content-right text-red font-semibold">Bằng cấp uy tín chất lượng</p>
                 </div>
                 <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 right-side 2xl:absolute text-center 2xl:right-[-30px] right-[20%] top-[200px] 2xl:w-[200px]">
-                    <p class="content-right text-red font-semibold">Ngại học và thi lại. Cảm thấy đã quá già để làm sinh
-                        viên</p>
+                    <p class="content-right text-red font-semibold">Chi phí học tập tối ưu</p>
                 </div>
                 <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 right-side 2xl:absolute text-center 2xl:right-[-50px] right-[20%] top-[300px] 2xl:w-[200px]">
-                    <p class="content-right text-red font-semibold">Chi phí học tập, sinh hoạt lớn</p>
-                </div>
-                <div class="p-4 2xl:p-0 border border-primary rounded-xl 2xl:border-0 mt-6 2xl:my-0 right-side 2xl:absolute text-center 2xl:right-[-50px] right-[20%] top-[400px] 2xl:w-[200px]">
-                    <p class="content-right text-red font-semibold">Muốn lấy thêm bằng nhưng không đủ sức học 2 trường cùng
-                        lúc</p>
+                    <p class="content-right text-red font-semibold">Chương trình đào tạo phong phú</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="listen" class="bg-[#ebf2ff] py-[40px]">
+    <section id="listen" class="bg-city py-[40px]">
         <div class="text-center">
             <h3 class="uppercase text-lg md:text-2xl font-bold px-4 xl:px-0">Hơn <strong class="text-primary font-bold">20.000 học viên</strong> của chúng
                 tôi<br>cũng từng giống như bạn</h3>
@@ -241,7 +233,7 @@
         </div>
     </section>
 
-    <section id="bachelor" class="py-[40px] bg-lightRed">
+    <section id="bachelor" class="py-[40px]">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-7 px-4 xl:px-0 container mx-auto">
             <div class="bachelor-info">
                 <h3 class="mb-6 pb-6 border-b-2 border-primary uppercase text-xl md:text-3xl font-bold">
@@ -274,9 +266,9 @@
                 <p class="text-sm mt-3">Theo Thông tư 27/2019/TT-BGDĐT, trên văn bằng sẽ vẫn ghi các nội dung cũ nhưng
                     không ghi thông tin về hình thức đào tạo</p>
                 <div class="text-center mt-6">
-                    <button class="bg-[#f2420d] py-2 px-6 text-white font-semibold rounded-3xl">
-                        tìm hiểu thêm
-                    </button>
+                    <a href="#banner" class="bg-[#f2420d] py-2 px-6 text-white font-semibold rounded-3xl hover:bg-[#52a103] leading-[37px] transition-all">
+                        Tìm hiểu thêm
+                    </a>
                 </div>
             </div>
             <div>
@@ -296,7 +288,7 @@
             </div>
         </div>
     </section>
-    <section id="admission" class="py-[40px]">
+    <section id="admission" class="py-[40px] bg-opacity">
         <div class="grid md:grid-cols-2 grid-cols-1 gap-7 container mx-auto">
             <div class="admission-img h-full overflow-hidden relative">
                 <img class="z-2 h-full object-cover relative hidden md:block"
@@ -307,7 +299,7 @@
                     <strong class="text-primary font-bold">không thi</strong>
                     tuyển sinh
                 </h3>
-                <p class="text-sm">TT Đào tạo từ xa thuộc Đại học Kinh Tế Quốc Dân chỉ áp dụng tuyển sinh theo một hình
+                <p class="text-sm">TT Đào tạo từ xa thuộc Metaway Education chỉ áp dụng tuyển sinh theo một hình
                     thức duy nhất đó là xét tuyển áp dụng với học viên:</p>
                 <ul>
                     <li class="text-sm mt-3"><i class="fa-solid fa-user mr-2 text-primary"></i>
@@ -361,7 +353,7 @@
             </div>
         </div>
     </section>
-    <section id="school" class="bg-[#ebf2ff] py-[40px]">
+    <section id="school" class="py-[40px]">
         <div class="grid md:grid-cols-4 grid-cols-2 grid-rows-4 gap-4 container mx-auto px-4 xl:px-0">
             <div class="h-full overflow-hidden relative md:row-start-1 md:row-end-5 md:col-start-1 md:col-end-3 col-span-2">
                 <div class="h-full relative flex flex-col justify-center md:justify-end w-full md:h-[160px] md:h-full">
@@ -370,7 +362,7 @@
                         alt="">
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl md:row-start-1 md:col-start-1">
+            <div class="relative bg-white rounded-xl md:row-start-1 md:col-start-1 border border-primary">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
                     <p class="tex-3xl md:text-4xl text-white text-center">01</p>
                 </div>
@@ -380,7 +372,7 @@
                         tử, tham gia lớp học Vclass.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl md:row-start-2 md:col-start-2">
+            <div class="relative bg-white rounded-xl md:row-start-2 md:col-start-2 border border-primary">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
                     <p class="tex-3xl md:text-4xl text-white text-center">02</p>
                 </div>
@@ -390,7 +382,7 @@
                         tập.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl md:row-start-3 md:col-start-3">
+            <div class="relative bg-white rounded-xl md:row-start-3 md:col-start-3 border border-primary">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
                     <p class="tex-3xl md:text-4xl text-white text-center">03</p>
                 </div>
@@ -399,7 +391,7 @@
                     <p class="text-sm">Tương tác với Giảng viên và các học viên khác hằng ngày qua forum.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl md:row-start-4 md:col-start-4">
+            <div class="relative bg-white rounded-xl md:row-start-4 md:col-start-4 border border-primary">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
                     <p class="tex-3xl md:text-4xl text-white text-center">04</p>
                 </div>
@@ -414,13 +406,18 @@
                     <strong class="text-primary font-bold">không cần</strong>
                     đến trường
                 </h3>
-                <p class="text-sm">Chỉ cần một chiếc máy tính có nối mạng internet là bạn có thể học bất cứ lúc nào, bất
-                    cứ nơi đâu. Môi trường học tập online không hề thua kém so với môi trường học tập truyền thống.
+                <p class="text-sm mt-3"><i class="fa-solid fa-right-long mr-2"></i> Chỉ cần một chiếc máy tính có nối mạng internet là bạn có thể học bất cứ lúc nào, bất
+                    cứ nơi đâu.</p>
+                <p class="text-sm mt-3"><i class="fa-solid fa-right-long mr-2"></i> Môi trường học tập online không hề thua kém so với môi trường học tập truyền thống.
+                </p>
+                <p class="text-sm mt-3"><i class="fa-solid fa-right-long mr-2"></i> Tạo không gian học tập thoải mái, học viên có thể chủ động hơn trong việc học.
+                </p>
+                <p class="text-sm mt-3"><i class="fa-solid fa-right-long mr-2"></i> Học tập nhóm đơn giản và hiệu quả, tăng cường tính tương tác giúp những học sinh hướng nội, nhút nhát có thể mạnh dạn giao tiếp với giáo viên hơn.
                 </p>
             </div>
         </div>
     </section>
-    <section id="newBachelor" class="py-[40px]">
+    <section id="newBachelor" class="bg-line py-[40px]">
         <div class="container mx-auto grid md:grid-cols-5 grid-cols-2 xl:px-0 px-4">
             <div class="col-span-1 hidden -rotate-90 text-primary font-bold md:flex justify-center items-center">
                 <p class="text-7xl">BACHELOR</p>
@@ -448,10 +445,10 @@
         </div>
     </section>
 
-    <section id="changeLife" class="py-[40px] bg-[#ebf2ff]">
+    <section id="changeLife" class="py-[40px]">
         <div class="text-center xl:px-0 px-4">
             <h3 class="uppercase text-lg md:text-3xl font-bold">
-                ĐẠI HỌC KINH TẾ QUỐC DÂN LUÔN NỖ LỰC KHÔNG NGỪNG
+                METAWAY EDUCATION
                 <br>
                 TÌM CHO BẠN
                 <strong class="text-primary font-bold">CON ĐƯỜNG NGẮN NHẤT</strong>
@@ -483,7 +480,7 @@
         </div>
     </section>
 
-    <section id="optimistic" class="bg-lightRed py-[40px]">
+    <section id="optimistic" class="bg-opacity py-[40px]">
         <div class="text-center">
             <h3 class="uppercase md:text-3xl text-xl font-bold px-4 xl:px-0">
                 <strong class="text-primary font-bold">học trực tuyến</strong>
@@ -549,7 +546,7 @@
         </div>
     </section>
 
-    <section id="majors" class="py-[40px]">
+    <section id="majors" class="bg-city py-[40px]">
         <div class="text-center">
             <h3 class="uppercase md:text-3xl text-xl font-bold">
                 <strong class="text-primary font-bold">các ngành </strong>tuyển sinh
@@ -608,7 +605,7 @@
                 <div class="text-center w-2/3 mx-auto p-2 relative border border-primary rounded-xl bg-white">
                     <div
                         class="rounded-full bottom-1/2 left-[-18px] translate-y-2/4 absolute bg-white w-[36px] h-[36px] border border-primary">
-                        <i class="fa-solid text-2xl fa-book-open text-primary"></i>
+                        <i class="fa-solid text-xl leading-9 fa-book-open text-primary"></i>
                     </div>
                     <div class="px-3">
                         <p class="font-bold">Hồ sơ pháp lý tốt</p>
@@ -619,7 +616,7 @@
                     class="md:mt-0 mt-4 text-center w-2/3 mx-auto p-2 relative border border-primary rounded-xl bg-white">
                     <div
                         class="rounded-full bottom-1/2 left-[-18px] translate-y-2/4 absolute bg-white w-[36px] h-[36px] border border-primary">
-                        <i class="fa-solid text-2xl fa-graduation-cap text-primary"></i>
+                        <i class="fa-solid text-xl leading-9 fa-graduation-cap text-primary"></i>
                     </div>
                     <div class="px-3">
                         <p class="font-bold">Trao đổi với cán bộ tư vấn về chương trình học</p>
@@ -631,7 +628,7 @@
                     class="md:mt-0 mt-4 text-center w-2/3 mx-auto p-2 relative border border-primary rounded-xl bg-white">
                     <div
                         class="rounded-full bottom-1/2 left-[-18px] translate-y-2/4 absolute bg-white w-[36px] h-[36px] border border-primary">
-                        <i class="fa-solid text-2xl fa-book-bookmark text-primary"></i>
+                        <i class="fa-solid text-xl leading-9 fa-book-bookmark text-primary"></i>
                     </div>
                     <div class="px-3">
                         <p class="font-bold">Học và lấy bằng
@@ -642,8 +639,8 @@
                 </div>
             </div>
             <div>
-                <div class="mx-auto mt-4 md:mt-0 text-center bg-primary rounded-xl w-2/3">
-                    <form action="" class="p-5">
+                <div class="text-center bg-form rounded-xl">
+                    <form action="" class="p-5 mt-4 lg:mt-0">
                         <p class="text-white text-lg font-bold uppercase">Đăng ký ngay tại đây</p>
                         <label>
                             <input type="text" class="mt-8 border-0 rounded-xl w-11/12" placeholder="Họ và tên*">
@@ -651,21 +648,23 @@
                         <label>
                             <input type="text" class="mt-4 border-0 rounded-xl w-11/12" placeholder="Số điện thoại">
                         </label>
+                        <label>
+                            <input type="email" class="mt-4 border-0 rounded-xl w-11/12" placeholder="Email">
+                        </label>
                         <select class="mt-4 border-0 rounded-xl w-11/12">
-                            <option value="" selected>Hệ tốt nghiệp</option>
+                            <option value="" selected>Hệ đào tạo</option>
                         </select>
                         <select class="mt-4 border-0 rounded-xl w-11/12">
-                            <option value="" selected>Ngành đăng ký</option>
+                            <option value="" selected class="text-grey">Ngành đăng ký</option>
                         </select>
-                        <button type="submit"
-                            class="mt-4 bg-[#f2420d] py-2 px-6 text-white font-semibold rounded-3xl registerBtn">Đăng ký</button>
+                        <button type="submit" class="mt-4 bg-[#66CC00] py-2 px-6 text-white font-semibold rounded-3xl registerBtn hover:bg-[#52a103] transition-all">Đăng ký</button>
                         <div class="uppercase text-white font-semibold mt-3">
                             lịch khai giảng dự kiến
                             <br>
                             <strong>21 - 12 - 2023</strong>
                         </div>
                     </form>
-                    <div class="grid grid-cols-4 rounded-b-xl px-10 bg-[#319508]">
+                    <div class="grid grid-cols-4 rounded-b-xl px-10 bg-[#35481f]">
                         <div class="px-4 py-2">
                             <p class="text-white text-2xl font-semibold">26</p>
                             <p class="text-white">ngày</p>
@@ -717,13 +716,14 @@
         <div class="py-10 text-center md:text-left container mx-auto">
             <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div class="">
-                    <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start text-grey">
-                        <i class="fa-solid fa-square"></i>
-                    </h6>
+                    <div class="flex">
+                        <img src="image/logo-mtwedu.png" alt="">
+                        <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start text-grey"> METAWAY EDU
+                        </h6>
+                    </div>
+
                     <p class="text-grey">
-                        Here you can use rows and columns to organize your footer
-                        content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
+                        Hãy ghi nhớ rằng: một cái quyển sách, một cái bút, một đứa trẻ và một người thầy có thể thay đổi cả thế giới này! 
                     </p>
                 </div>
             
@@ -773,6 +773,17 @@
                 href="https://tailwind-elements.com/">METAEDU</a>
         </div>
     </footer>
+
+    <model class="overlay">
+        <div class="modal-success absolute bg-white p-5 max-w-md max-h-40 h-full w-full rounded-md overflow-hidden flex items-start justify-center">
+            <div class="text-center">
+                <h4 class="text-2xl font-bold text-green-700">Chúc mừng bạn đã</h4>
+                <h4 class="text-2xl font-bold text-green-700">Đăng ký thành công chương trình!</h4>
+                <i class="fa-solid fa-face-laugh-squint text-[#facc15] text-4xl mt-3"></i>
+            </div>
+        </div>
+    </model>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="">
         $(document).ready(function () {
