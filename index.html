@@ -26,21 +26,21 @@
     <header>
         <nav class="bg-white fixed w-full z-20 shadow-md">
             <div class="flex items-center relative justify-between container mx-auto">
-                <div class="flex items-center">
+                <a href="#banner" class="flex items-center">
                     <img src="image/logo-mtwedu.png"
                         class="w-[80px] aspect-[157/112]" alt="">
-                    <p class=" font-bold ml-2 text-sm md:text-lg">Metaway <strong class="text-primary font-bold">Edu</strong></p>
-                </div>
+                    <p class=" font-bold text-sm md:text-lg">Metaway <strong class="text-primary font-bold">Edu</strong></p>
+                </a>
                 <label for="navbar-checkbox" class="mr-3">
                     <i class="fa-solid fa-bars text-primary text-3xl block lg:hidden"></i>
                 </label>
                 <input id="navbar-checkbox" class="hidden" type="checkbox">
                 <div class="menu-nav flex flex-col bg-white absolute right-0 top-[100%] lg:relative lg:flex-row lg:items-center font-semibold text-sm justify-between uppercase w-full lg:w-auto shadow-md lg:shadow-none">
-                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="#listen">phản hồi</a>
-                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="#bachelor">bằng cấp</a>
-                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="#school">học trực tuyến</a>
-                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="#majors">ngành học</a>
-                    <a href="#banner" class="uppercase lg:ml-6 py-3 px-6 lg:rounded-3xl bg-primary text-primary border border-primary text-white hover:bg-[#52a103] transition-all">tư vấn miễn phí</a>
+                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="#listen" onclick="handleNavClick()">phản hồi</a>
+                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="#bachelor" onclick="handleNavClick()">bằng cấp</a>
+                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="#school" onclick="handleNavClick()">học trực tuyến</a>
+                    <a class="lg:px-6 lg:py-0 px-6 py-3" href="#majors" onclick="handleNavClick()">ngành học</a>
+                    <a href="#banner" class="uppercase lg:ml-6 py-3 px-6 lg:rounded-3xl bg-primary text-primary border border-primary text-white hover:bg-[#52a103] transition-all" onclick="handleNavClick()">tư vấn miễn phí</a>
                     <label for="navbar-checkbox" class="lg:hidden block layout relative"></label>
                 </div>
             </div>
@@ -362,7 +362,7 @@
                         alt="">
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl md:row-start-1 md:col-start-1 border border-primary">
+            <div class="relative bg-white rounded-xl md:row-start-1 md:col-start-1 border border-primary h-[200px] md:h-auto">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
                     <p class="tex-3xl md:text-4xl text-white text-center">01</p>
                 </div>
@@ -372,7 +372,7 @@
                         tử, tham gia lớp học Vclass.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl md:row-start-2 md:col-start-2 border border-primary">
+            <div class="relative bg-white rounded-xl md:row-start-2 md:col-start-2 border border-primary h-[200px] md:h-auto">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
                     <p class="tex-3xl md:text-4xl text-white text-center">02</p>
                 </div>
@@ -382,7 +382,7 @@
                         tập.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl md:row-start-3 md:col-start-3 border border-primary">
+            <div class="relative bg-white rounded-xl md:row-start-3 md:col-start-3 border border-primary h-[200px] md:h-auto">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
                     <p class="tex-3xl md:text-4xl text-white text-center">03</p>
                 </div>
@@ -391,7 +391,7 @@
                     <p class="text-sm">Tương tác với Giảng viên và các học viên khác hằng ngày qua forum.</p>
                 </div>
             </div>
-            <div class="relative bg-white rounded-xl md:row-start-4 md:col-start-4 border border-primary">
+            <div class="relative bg-white rounded-xl md:row-start-4 md:col-start-4 border border-primary h-[200px] md:h-auto">
                 <div class="custom-bg rounded-tr-xl ml-auto w-1/4">
                     <p class="tex-3xl md:text-4xl text-white text-center">04</p>
                 </div>
@@ -800,6 +800,12 @@
                 $('.overlay').stop().fadeOut()
             })
         })
+    </script>
+    <script>
+        var element = document.querySelector('.menu-nav');
+        const handleNavClick = () => {
+            document.getElementById("navbar-checkbox").checked = false;
+        }
     </script>
 </body>
 

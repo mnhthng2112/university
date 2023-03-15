@@ -179,19 +179,3 @@ body {
         visibility: visible;
     }
 }
-
-/* .ani {
-    animation: invert 6s linear infinite;
-}
-
-@keyframes invert {
-    0% {
-        filter: invert(0);
-    }
-    50% {
-        filter: invert(100%);
-    }
-    100% {
-        filter: invert(0);
-    }
-} */
