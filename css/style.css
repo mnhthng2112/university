@@ -43,7 +43,7 @@ body {
 }
 
 .bg-line {
-    background-image: url('image/banner-line.png');
+    background-image: url('/image/banner-line.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
