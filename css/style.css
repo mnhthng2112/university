@@ -9,7 +9,8 @@ body {
     text-shadow: 2px 1px #141b14;
 }
 
-.overlay {
+.overlay,
+.overlay-fail {
     display: none;
     z-index: 99;
     position: fixed;
@@ -19,7 +20,8 @@ body {
     height: 100%;
 }
 
-.modal-success {
+.modal-success,
+.modal-fail {
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
 }

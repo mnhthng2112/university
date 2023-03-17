@@ -783,6 +783,15 @@
             </div>
         </div>
     </model>
+    <model class="overlay-fail">
+        <div class="modal-fail absolute bg-white p-5 max-w-md max-h-40 h-full w-full rounded-md overflow-hidden flex items-start justify-center">
+            <div class="text-center">
+                <h4 class="text-2xl font-bold text-[#dc2626]">Bạn đã đăng ký thất bại</h4>
+                <h4 class="text-2xl font-bold text-[#dc2626]">Vui lòng đăng ký lại!</h4>
+                <i class="fa-solid fa-face-frown text-[#facc15] text-4xl mt-3"></i>
+            </div>
+        </div>
+    </model>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="">
@@ -798,6 +807,22 @@
 
             $('.overlay').on('click', function(e) {
                 $('.overlay').stop().fadeOut()
+            })
+        })
+    </script>
+    <script type="">
+        $(document).ready(function () {
+            $('.registerBtn').on('click', function(e) {
+                e.preventDefault()
+                $('.overlay-fail').stop().fadeIn().promise().done(() => {
+                    setTimeout(() => {
+                        $('.overlay-fail').stop().fadeOut()
+                    }, 2000);
+                })
+            })
+
+            $('.overlay-fail').on('click', function(e) {
+                $('.overlay-fail').stop().fadeOut()
             })
         })
     </script>
